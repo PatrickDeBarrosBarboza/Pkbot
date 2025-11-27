@@ -1,0 +1,20 @@
+{
+  "name": "Pkbot",
+  "version": "1.0.0",
+  "description": "bit whatsapp pk vision",
+  "main": "index.js",
+  "scripts": {
+  "dev": "ts-node index.ts",
+  "build": "tsc",
+  "start": "node dist/index.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickDeBarrosBarboza/Pkbot.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PatrickDeBarrosBarboza/Pkbot/issues"
+  },
+  "homepage": "https://github.com/PatrickDeBarrosBarboza/Pkbot#readme"
+}
