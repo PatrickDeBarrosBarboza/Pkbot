@@ -8,9 +8,9 @@ import pino from "pino"
 import { Boom } from "@hapi/boom"
 import qrcode from "qrcode-terminal"
 import fs from "fs"
-
-const MEU_NUMERO = "555132378785"
-const AUTH_FILE_NAME = "auth_info_baileys"
+import "dotenv/config";
+const OWNER_NUMERO = process.env.OWNER_NUMERO
+const AUTH_FILE_NAME = process.env.AUTH_FILE_NAME
 
 async function connectToWhatsApp() {
   const { state, saveCreds } = await useMultiFileAuthState(AUTH_FILE_NAME)
@@ -55,7 +55,7 @@ async function connectToWhatsApp() {
 }
 
 async function enviarMensagemBotOnline(sock: WASocket) {
-  const jid = `${MEU_NUMERO.replace(/\D/g, "")}@s.whatsapp.net`
+  const jid = `${OWNER_NUMERO.replace(/\D/g, "")}@s.whatsapp.net`
 
   try {
     await sock.sendMessage(jid, {

@@ -4,10 +4,10 @@
   "description": "bit whatsapp pk vision",
   "main": "index.js",
   "scripts": {
-  "dev": "ts-node index.ts",
-  "build": "tsc",
-  "start": "node dist/index.js"
-},
+    "dev": "ts-node index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PatrickDeBarrosBarboza/Pkbot.git"
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/PatrickDeBarrosBarboza/Pkbot/issues"
   },
-  "homepage": "https://github.com/PatrickDeBarrosBarboza/Pkbot#readme"
+  "homepage": "https://github.com/PatrickDeBarrosBarboza/Pkbot#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
 }
