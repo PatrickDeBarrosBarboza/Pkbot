@@ -18,9 +18,16 @@
   },
   "homepage": "https://github.com/PatrickDeBarrosBarboza/Pkbot#readme",
   "dependencies": {
-    "dotenv": "^17.2.3"
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "chalk": "^5.6.2",
+    "dotenv": "^17.2.3",
+    "pino": "^10.1.0",
+    "qrcode-terminal": "^0.12.0"
   },
   "devDependencies": {
-    "@types/node": "^24.10.1"
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
